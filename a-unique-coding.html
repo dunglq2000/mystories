@@ -1,0 +1,595 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>8. A unique decoding &#8212; Những dòng note vội vã gửi cho người bạn thân vào đêm trước cuộc đấu súng</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'a-unique-coding';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="6. Primes" href="primes.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to vùng đất hỗn loạn
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">NSUCRYPTO 2023</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="nsucrypto2023.html">NSUCRYPTO 2023</a></li>
+<li class="toctree-l1"><a class="reference internal" href="antcipher.html">1. AntCipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mixed-hashes.html">2. Mixed hashes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="algebraic-cryptanalysis.html">3. Algebraic cryptanalysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quantum-encryption.html">4. Quantum encryption</a></li>
+<li class="toctree-l1"><a class="reference internal" href="affine-cipher.html">5. Affine cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="primes.html">6. Primes</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">8. A unique decoding</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fa-unique-coding.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/a-unique-coding.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>8. A unique decoding</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#de-bai">Đề bài</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#giai">Giải</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="a-unique-decoding">
+<h1>8. A unique decoding<a class="headerlink" href="#a-unique-decoding" title="Permalink to this heading">#</a></h1>
+<p>Bài này khi nhìn đề thì “có vẻ” câu hỏi Q2 là trường hợp nhỏ hơn của Q1. Mình giải Q2 (không chắc đúng hoàn toàn) nên lời giải sau đây áp dụng cho cả Q1 và Q2 :v :v :v</p>
+<section id="de-bai">
+<h2>Đề bài<a class="headerlink" href="#de-bai" title="Permalink to this heading">#</a></h2>
+<p>Xét binary error-correcting code <span class="math notranslate nohighlight">\(\mathcal{C}\)</span> với độ dài <span class="math notranslate nohighlight">\(n\)</span>. Code này chỉ đơn giản là tập con của <span class="math notranslate nohighlight">\(\mathbb{F}_2^n\)</span> thôi và ta truyền một phần tử của code này qua các kênh truyền.</p>
+<p>Khi đi qua các kênh truyền các bit có thể bị sai, dẫn tới bị đảo bit. Khi nhận được vector <span class="math notranslate nohighlight">\(\boldsymbol{y} \in \mathbb{F}_2^n\)</span>, ta sẽ decode thành một phần tử thuộc <span class="math notranslate nohighlight">\(\mathcal{C}\)</span> mà có khoảng cách gần <span class="math notranslate nohighlight">\(\boldsymbol{y}\)</span> nhất, nói cách khác là Hamming weight ngắn nhất.</p>
+<p>Xét cơ chế decode maximal-likelihood. Giả sử ta nhận được <span class="math notranslate nohighlight">\(\boldsymbol{y} \in \mathbb{F}_2^n\)</span>, ta muốn xét các trường hợp lỗi xảy ra ít nhất, gọi là <span class="math notranslate nohighlight">\(d_{\boldsymbol{y}}\)</span>, nghĩa là</p>
+<div class="math notranslate nohighlight">
+\[d_{\boldsymbol{y}} = \min_{\boldsymbol{x} \in \mathcal{C}} wt(\boldsymbol{x}, \boldsymbol{y})\]</div>
+<p>Tiếp theo, đặt <span class="math notranslate nohighlight">\(\mathcal{D} (\boldsymbol{y}) = \{ \boldsymbol{x} \in \mathcal{C} : wt(\boldsymbol{x}, \boldsymbol{y}) = d_{\boldsymbol{y}} \}\)</span>. Cuối cùng ta decode <span class="math notranslate nohighlight">\(\boldsymbol{y}\)</span> thành phần tử <span class="math notranslate nohighlight">\(\boldsymbol{x}\)</span> nào đó trong <span class="math notranslate nohighlight">\(\mathcal{D}(\boldsymbol{y})\)</span>.</p>
+<p>Chúng ta quan tâm tới các trường hợp code <span class="math notranslate nohighlight">\(\mathcal{C}\)</span> khiến <span class="math notranslate nohighlight">\(\lvert \mathcal{D}(\boldsymbol{y}) \rvert = 1\)</span> với mọi <span class="math notranslate nohighlight">\(\boldsymbol{y} \in \mathbb{F}_2^n\)</span>. Nói cách khác khi nhận được <span class="math notranslate nohighlight">\(\boldsymbol{y}\)</span> bất kì của <span class="math notranslate nohighlight">\(\mathbb{F}_2^n\)</span> ta có thể decode thành một dạng duy nhất.</p>
+<p><strong>Q1</strong>. Code <span class="math notranslate nohighlight">\(\mathcal{C}\)</span> như nào thì thỏa mãn tính chất này?</p>
+<p><strong>Q2</strong>. Code <span class="math notranslate nohighlight">\(\mathcal{C}\)</span> như nào thỏa mãn tính chất này và là không gian tuyến tính con của <span class="math notranslate nohighlight">\(\mathbb{F}_2^n\)</span>?</p>
+</section>
+<section id="giai">
+<h2>Giải<a class="headerlink" href="#giai" title="Permalink to this heading">#</a></h2>
+<p>Đầu tiên mình có nhận xét (khá rõ ràng) sau đây:</p>
+<p><strong>Nhận xét 1</strong>. Với mọi <span class="math notranslate nohighlight">\(n\)</span>, code <span class="math notranslate nohighlight">\(\mathcal{C} \equiv \mathbb{F}_2^n\)</span> thỏa mãn tính chất trên.</p>
+<p>Chúng ta có thể thấy rằng với mọi <span class="math notranslate nohighlight">\(\boldsymbol{y} \in \mathbb{F}_2^n\)</span> nhận được thì sẽ decode thành chính nó trong <span class="math notranslate nohighlight">\(\mathcal{C}\)</span>.</p>
+<p>Tiếp theo, ta xét nửa trên của <span class="math notranslate nohighlight">\(\mathbb{F}_2^n\)</span>. Trong hệ thập phân thì đó là các số từ <span class="math notranslate nohighlight">\(0\)</span> tới <span class="math notranslate nohighlight">\(2^{n-1} - 1\)</span> và có dạng</p>
+<div class="math notranslate nohighlight">
+\[\boldsymbol{x} = (0, x_1, x_2, \ldots, x_{n-1})\]</div>
+<p>Nói cách khác, code <span class="math notranslate nohighlight">\(\mathcal{C}\)</span> là tập hợp</p>
+<div class="math notranslate nohighlight">
+\[\mathcal{C} = \{ \boldsymbol{x} = (0, x_1, x_2, \ldots, x_{n-1}): x_i \in \mathbb{F}_2 \}\]</div>
+<p>Code <span class="math notranslate nohighlight">\(\mathcal{C}\)</span> này thỏa mãn tính chất trên và mình sẽ chứng minh ngay sau đây.</p>
+<p><strong>Chứng minh</strong>. Giả sử ta nhận được <span class="math notranslate nohighlight">\(\boldsymbol{y} \in \mathbb{F}_2^n\)</span>. Ta có hai trường hợp:</p>
+<ul class="simple">
+<li><p>nếu <span class="math notranslate nohighlight">\(\boldsymbol{y} = (0, y_1, y_2, \ldots, y_{n-1})\)</span>, hay nói cách khác biểu diễn thập phân của <span class="math notranslate nohighlight">\(\boldsymbol{y}\)</span> là từ <span class="math notranslate nohighlight">\(0\)</span> tới <span class="math notranslate nohighlight">\(2^{n-1} - 1\)</span>, thì <span class="math notranslate nohighlight">\(\boldsymbol{y}\)</span> được decode thành chính nó trong <span class="math notranslate nohighlight">\(\mathcal{C}\)</span>. Khi này <span class="math notranslate nohighlight">\(d_{\boldsymbol{y}} = 0\)</span> nhỏ nhất và không có vector nào khác cho Hamming weight bằng <span class="math notranslate nohighlight">\(0\)</span> trừ chính nó.</p></li>
+<li><p>nếu <span class="math notranslate nohighlight">\(\boldsymbol{y} = (1, y_1, y_2, \ldots, y_{n-1})\)</span>, hay nói cách khác biểu diễn thập phân của <span class="math notranslate nohighlight">\(\boldsymbol{y}\)</span> là từ <span class="math notranslate nohighlight">\(2^{n-1}\)</span> tới <span class="math notranslate nohighlight">\(2^n - 1\)</span>, thì <span class="math notranslate nohighlight">\(\boldsymbol{y}\)</span> được decode thành <span class="math notranslate nohighlight">\(\boldsymbol{x} = (0, y_1, y_2, \ldots, y_{n-1})\)</span> trong <span class="math notranslate nohighlight">\(\mathcal{C}\)</span>. Khi này <span class="math notranslate nohighlight">\(d_{\boldsymbol{y}} = 1\)</span> nhỏ nhất vì khác mỗi bit đầu tiên và cũng không có vector nào khác cho Hamming weight bằng <span class="math notranslate nohighlight">\(1\)</span>.</p></li>
+</ul>
+<p>Tiếp theo, mình viết các vector trong <span class="math notranslate nohighlight">\(\mathcal{C}\)</span> thành các hàng của 1 ma trận <span class="math notranslate nohighlight">\(2^{n-1} \times n\)</span>. Gọi <span class="math notranslate nohighlight">\(A\)</span> là ma trận hoán vị các cột của ma trận <span class="math notranslate nohighlight">\(2^{n-1} \times n\)</span> đó. Khi đó <span class="math notranslate nohighlight">\(A\)</span> là ma trận có tính chất: trên mỗi hàng và trên mỗi cột có đúng một phần tử (bằng 1) và ma trận <span class="math notranslate nohighlight">\(A\)</span> khả nghịch. Ví dụ, với <span class="math notranslate nohighlight">\(n=4\)</span>, ma trận để hoán vị cột 2 với cột 4 là <span class="math notranslate nohighlight">\(\begin{pmatrix}1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \end{pmatrix}\)</span>.</p>
+<p>Khi đó, nếu mình nhân ma trận <span class="math notranslate nohighlight">\(2^{n-1} \times n\)</span> của code <span class="math notranslate nohighlight">\(\mathcal{C}\)</span> với bất kì ma trận <span class="math notranslate nohighlight">\(A\)</span> nào như vậy thì code <span class="math notranslate nohighlight">\(\mathcal{C}'\)</span> nhận được cũng thỏa mãn tính chất trên.</p>
+<p><strong>Ví dụ</strong>, với <span class="math notranslate nohighlight">\(n=4\)</span> thì code <span class="math notranslate nohighlight">\(\mathcal{C}\)</span> gồm các vector</p>
+<div class="math notranslate nohighlight">
+\[\mathcal{C} = \{ 0000, 0001, 0010, 0011, 0100, 0101, 0110, 0111 \}\]</div>
+<p>Với ma trận <span class="math notranslate nohighlight">\(A\)</span> hoán vị cột 2 và 4 như trên ta có</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{pmatrix} 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 1 \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 1 &amp; 0 \\ 0 &amp; 1 &amp; 1 &amp; 1 \end{pmatrix} \cdot \begin{pmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \end{pmatrix} = \begin{pmatrix} 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 1 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; 1 &amp; 1 \\ 0 &amp; 1 &amp; 1 &amp; 1\end{pmatrix} = \mathcal{C}'\end{split}\]</div>
+<p>Bây giờ mình sẽ chứng minh rằng với mọi ma trận <span class="math notranslate nohighlight">\(A\)</span> hoán vị các cột như vậy thì code <span class="math notranslate nohighlight">\(\mathcal{C}'\)</span> cũng thỏa mãn tính chất.</p>
+<p><strong>Chứng minh</strong>. Đặt</p>
+<div class="math notranslate nohighlight">
+\[\mathcal{C} = \{ (0, x_1, x_2, \ldots, x_{n-1}), x_i \in \mathbb{F}_2 \}\]</div>
+<p>Gọi <span class="math notranslate nohighlight">\(A\)</span> là ma trận hoán vị cột kích thước <span class="math notranslate nohighlight">\(n \times n\)</span>. Khi đó ánh xạ</p>
+<div class="math notranslate nohighlight">
+\[A: \mathbb{F}_2^n \to \mathbb{F}_2^n, \quad \boldsymbol{y} \to \boldsymbol{y} \cdot A\]</div>
+<p>là song ánh do <span class="math notranslate nohighlight">\(A\)</span> là ma trận khả nghịch. Khi đó xét code</p>
+<div class="math notranslate nohighlight">
+\[\mathcal{C}' = \{ \boldsymbol{x} \cdot A: \boldsymbol{x} \in \mathcal{C} \}\]</div>
+<p>Mình vẫn có hai trường hợp.</p>
+<p><em>Trường hợp 1.</em> Với <span class="math notranslate nohighlight">\(\boldsymbol{y} = (0, y_1, y_2, \ldots, y_{n-1}) \in \mathbb{F}_2^n\)</span> từ <span class="math notranslate nohighlight">\(0\)</span> tới <span class="math notranslate nohighlight">\(2^{n-1}-1\)</span> như trên. Xét <span class="math notranslate nohighlight">\(\boldsymbol{y}' = \boldsymbol{y} \cdot A\)</span>.</p>
+<p>Khi đó, với <span class="math notranslate nohighlight">\(\boldsymbol{x} = (0, y_1, y_2, \ldots, y_{n-1}) \in \mathcal{C}\)</span>, ta có <span class="math notranslate nohighlight">\(\boldsymbol{x}' = \boldsymbol{x} \cdot A \in \mathcal{C}'\)</span>. Từ đây suy ra</p>
+<div class="math notranslate nohighlight">
+\[wt(\boldsymbol{x}' \oplus \boldsymbol{y}') = wt((\boldsymbol{x} \cdot A) \oplus (\boldsymbol{y} \cdot A)) = wt((\boldsymbol{x} \oplus \boldsymbol{y}) \cdot A) = wt(\boldsymbol{0} \cdot A) = 0\]</div>
+<p>Ở đây <span class="math notranslate nohighlight">\(\boldsymbol{0} = (0, 0, \ldots, 0) \in \mathbb{F}_2^n\)</span>.</p>
+<p>Nói cách khác <span class="math notranslate nohighlight">\(d_{\boldsymbol{y}'} = 0\)</span> và có duy nhất một vector <span class="math notranslate nohighlight">\(\boldsymbol{x}'\)</span> được định nghĩa như trên thỏa mãn. Do đó <span class="math notranslate nohighlight">\(\lvert \mathcal{D}(\boldsymbol{y}') \rvert = 1\)</span>.</p>
+<p><em>Trường hợp 2.</em> Với <span class="math notranslate nohighlight">\(\boldsymbol{y} = (1, y_1, y_2, \ldots, y_{n-1}) \in \mathbb{F}_2^n\)</span> từ <span class="math notranslate nohighlight">\(2^{n-1}\)</span> tới <span class="math notranslate nohighlight">\(2^n-1\)</span> như trên. Ta cũng xét <span class="math notranslate nohighlight">\(\boldsymbol{y}' = \boldsymbol{y} \cdot A\)</span>.</p>
+<p>Khi đó, với <span class="math notranslate nohighlight">\(\boldsymbol{x} = (0, y_1, y_2, \ldots, y_{n-1}) \in \mathcal{C}\)</span>, ta cũng có <span class="math notranslate nohighlight">\(\boldsymbol{x}' = \boldsymbol{x} \cdot \in \mathcal{C}'\)</span>. Từ đây ta có</p>
+<div class="math notranslate nohighlight">
+\[wt(\boldsymbol{x}' \oplus \boldsymbol{y}') = wt((\boldsymbol{x} \cdot A) \oplus (\boldsymbol{y} \cdot A)) = wt((\boldsymbol{x} \oplus \boldsymbol{y}) \cdot A) = wt((1, 0, 0, \ldots, 0) \cdot A) = 1\]</div>
+<p>Ở phép nhân vector <span class="math notranslate nohighlight">\((1, 0, \ldots, 0)\)</span> với ma trận <span class="math notranslate nohighlight">\(A\)</span>, vì ma trận <span class="math notranslate nohighlight">\(A\)</span> chỉ có duy nhất một cột có dạng <span class="math notranslate nohighlight">\((1, 0, \ldots, 0)^T\)</span> nên kết quả phép nhân là một vector có đúng một phần tử 1, còn lại là 0.</p>
+<p>Nói cách khác <span class="math notranslate nohighlight">\(d_{\boldsymbol{y}'} = 1\)</span> và có duy nhất một vector <span class="math notranslate nohighlight">\(\boldsymbol{x}'\)</span> được định nghĩa như trên thỏa mãn. Do đó <span class="math notranslate nohighlight">\(\lvert \mathcal{D}(\boldsymbol{y}') \rvert = 1\)</span>.</p>
+<p>Như vậy ta đã chứng minh xong.</p>
+<p>Hoàn toàn tương tự, khi code <span class="math notranslate nohighlight">\(\mathcal{C}\)</span> là các vector bắt đầu với hai số 0 thì ta lần lượt xét <span class="math notranslate nohighlight">\(\boldsymbol{y}\)</span> trong các khoảng <span class="math notranslate nohighlight">\([0, 2^{n-2}-1]\)</span>, <span class="math notranslate nohighlight">\([2^{n-2}, 2^{n-1}-1]\)</span>, <span class="math notranslate nohighlight">\([2^{n-1}, 2^{n-1} + 2^{n-2}-1]\)</span>, <span class="math notranslate nohighlight">\([2^{n-1} + 2^{n-2} - 1, 2^n-1]\)</span>. Nghĩa là</p>
+<div class="math notranslate nohighlight">
+\[\mathcal{C} = \{ \boldsymbol{x} = (0, 0, x_1, x_2, \ldots, x_{n-2}: x_i \in \mathbb{F}_2^n) \}\]</div>
+<p>Khi đó ta xét các vector <span class="math notranslate nohighlight">\(\boldsymbol{y}\)</span> có dạng:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\boldsymbol{y} = (0, 0, y_1, y_2, \ldots, y_{n-2})\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\boldsymbol{y} = (0, 1, y_1, y_2, \ldots, y_{n-2})\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\boldsymbol{y} = (1, 0, y_1, y_2, \ldots, y_{n-2})\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\boldsymbol{y} = (1, 1, y_1, y_2, \ldots, y_{n-2})\)</span></p></li>
+</ul>
+<p>Theo quy nạp thì code <span class="math notranslate nohighlight">\(C\)</span> bắt đầu với <span class="math notranslate nohighlight">\(i\)</span> số 0 đều đúng, <span class="math notranslate nohighlight">\(0 \leqslant i \leqslant n\)</span>. Nghĩa là</p>
+<div class="math notranslate nohighlight">
+\[\mathcal{C} = \{ \boldsymbol{x} = (0, \ldots, 0, x_1, x_2, \ldots, x_{n-i}): x_i \in \mathbb{F}_2 \}\]</div>
+<p>Sau đó chúng ta lại áp dụng phép nhân với ma trận hoán vị cột <span class="math notranslate nohighlight">\(A\)</span> như bên trên thì các code <span class="math notranslate nohighlight">\(\mathcal{C}'\)</span> cũng thỏa mãn.</p>
+<p>Vấn đề ở đây là, những code <span class="math notranslate nohighlight">\(\mathcal{C}\)</span> như vậy là không gian vector sinh bởi <span class="math notranslate nohighlight">\(i\)</span> vector (<span class="math notranslate nohighlight">\(0 \leqslant i \leqslant n\)</span>) trong các vector sau:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align*} \boldsymbol{v}_1 &amp; = (1, 0, 0, \ldots, 0, 0) \\ \boldsymbol{v}_2 &amp; = (0, 1, 0, \ldots, 0, 0) \\ \boldsymbol{v}_3 &amp; = (0, 0, 1, \ldots, 0, 0) \\ \cdots &amp; = \cdots \\ \boldsymbol{v}_n &amp; = (0, 0, 0, \ldots, 0, 1) \end{align*}\end{split}\]</div>
+<p>Số cách chọn <span class="math notranslate nohighlight">\(i\)</span> vector từ <span class="math notranslate nohighlight">\(n\)</span> vector là</p>
+<div class="math notranslate nohighlight">
+\[C_n^0 + C_n^1 + \ldots + C_n^n = 2^n\]</div>
+<p>cách. Nói cách khác có <span class="math notranslate nohighlight">\(2^n\)</span> code <span class="math notranslate nohighlight">\(\mathcal{C}\)</span> thỏa tính chất đề bài và là không gian tuyến tính của <span class="math notranslate nohighlight">\(\mathbb{F}_2^n\)</span>.</p>
+<p><strong>Ví dụ</strong>. Với <span class="math notranslate nohighlight">\(n=3\)</span> thì các code sau thỏa mãn tính chất</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align*}
+    &amp; \mathcal{C}_1 = \{ 000 \}, \\
+    &amp; \mathcal{C}_2 = \{ 000, 001 \}, \\
+    &amp; \mathcal{C}_3 = \{ 000, 010 \}, \\
+    &amp; \mathcal{C}_4 = \{ 000, 100 \}, \\
+    &amp; \mathcal{C}_5 = \{ 000, 001, 010, 011 \}, \\
+    &amp; \mathcal{C}_6 = \{ 000, 001, 100, 101 \}, \\
+    &amp; \mathcal{C}_7 = \{ 000, 010, 100, 110 \}, \\
+    &amp; \mathcal{C}_8 = \{ 000, 001, 010, 011, 100, 101, 110, 111 \}
+\end{align*}\end{split}\]</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="primes.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">6. Primes</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#de-bai">Đề bài</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#giai">Giải</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Trường phái Galois
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
