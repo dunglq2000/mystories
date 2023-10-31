@@ -7,11 +7,11 @@ parts:
   - caption: NSUCRYPTO 2023
     ordered: true
     chapters:
-      - file: nsucrypto2023
-      - file: antcipher
-      - file: mixed-hashes
-      - file: algebraic-cryptanalysis
-      - file: quantum-encryption
-      - file: affine-cipher
-      - file: primes
-      - file: a-unique-coding
+      - file: nsucrypto-23/nsucrypto2023
+      - file: nsucrypto-23/antcipher
+      - file: nsucrypto-23/mixed-hashes
+      - file: nsucrypto-23/algebraic-cryptanalysis
+      - file: nsucrypto-23/quantum-encryption
+      - file: nsucrypto-23/affine-cipher
+      - file: nsucrypto-23/primes
+      - file: nsucrypto-23/a-unique-coding

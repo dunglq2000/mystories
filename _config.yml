@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: Những dòng note vội vã gửi cho người bạn thân vào đêm trước cuộc đấu súng
-author: Trường phái Galois
+author: Tui
 logo: logo.png
 
 # Force re-execution of notebooks on each build.
@@ -30,3 +30,7 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+
+sphinx:
+  extra_extensions:
+    - sphinx_proof
